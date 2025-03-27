@@ -1,3 +1,4 @@
+import entities.Fila;
 import entities.Pilha;
 
 public class Main {
@@ -5,29 +6,53 @@ public class Main {
 
         // Testando Pilha
 
-        Pilha p = new Pilha(10);
+        Pilha p = new Pilha(5);
 
-        System.out.println(p.pilhaVazia());
-        System.out.println(p.pilhaCheia());
-        System.out.println(p.consultaTopo());
+        p.imprimePilha();
 
-        p.empilhaElemento(4);
-        p.empilhaElemento(3);
-        p.empilhaElemento(5);
-        p.empilhaElemento(8);
+        p.empilhaElemento(10);
+        p.empilhaElemento(20);
+        p.empilhaElemento(30);
+        p.imprimePilha();
 
-        System.out.println(p.pilhaVazia());
-        System.out.println(p.pilhaCheia());
-        System.out.println(p.consultaTopo());
+        System.out.println("\nDesempilhando: " + p.desempilhaElemento());
+        p.imprimePilha();
 
-        p.desempilhaElemento();
-        p.desempilhaElemento();
+        p.empilhaElemento(40);
+        p.empilhaElemento(50);
+        p.empilhaElemento(60);
+        p.imprimePilha();
 
-        System.out.println(p.consultaTopo());
+        System.out.println("\nTopo atual: " + p.consultaTopo());
 
-        p.desempilhaElemento();
-        p.desempilhaElemento();
-        p.desempilhaElemento();
+        // Testando Fila
+
+        System.out.println("\n- FILA -\n");
+
+        Fila f = new Fila(10);
+
+        f.imprimirFila();
+
+        System.out.println("Fila cheia: " + f.filaCheia());
+        System.out.println("Fila vazia: " +f.filaVazia());
+
+        f.insereElemento(2);
+        f.insereElemento(1);
+
+        f.imprimirFila();
+
+        System.out.println("Saindo da fila: " + f.removeElemento());
+
+        f.insereElemento(3);
+        f.insereElemento(4);
+        f.insereElemento(5);
+
+        f.imprimirFila();
+
+        System.out.println("Saindo da fila: " + f.removeElemento());
+        System.out.println("Saindo da fila: " + f.removeElemento());
+
+        f.imprimirFila();
 
     }
 }

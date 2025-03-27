@@ -54,5 +54,26 @@ public class Pilha {
         return pilha[topo];
     }
 
+    public void imprimePilha() {
+        if (pilhaVazia()) {
+            System.out.println("Erro: Pilha vazia");
+            return;
+        }
+
+        System.out.println("\nEstado atual da pilha:");
+        System.out.println("|------|");
+        for (int i = topo; i >= 0; i--) {
+            System.out.printf("|  %d  |", pilha[i]);
+            if (i == topo) {
+                System.out.print(" ← Topo");
+            }
+            System.out.println();
+            System.out.println("|------|");
+        }
+
+        System.out.println("|______|");
+        System.out.println("Elementos na pilha: " + (topo + 1) + "/" + MAX);
+    }
+
 
 }
