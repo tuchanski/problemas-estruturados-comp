@@ -108,7 +108,7 @@ Este repositório contém a implementação das estruturas de dados **Pilha** e 
   Resultado esperado: 1 2 3 4 5 6
   ```
 
-**Funcionamento do merge(FilaEncadeada fila1, FilaEncadeada fila2)**:
+**Lógica do merge(FilaEncadeada fila1, FilaEncadeada fila2)**:
 - Inicializa uma nova fila vazia para armazenar o resultado do merge
 - Enquanto as duas filas tiverem elementos:
   - Compara os elementos da frente de cada fila
@@ -129,7 +129,7 @@ Este repositório contém a implementação das estruturas de dados **Pilha** e 
   Resultado esperado: 1 2 3 4 5 6
   ```
 
-**Funcionamento do `merge(int[] vetor1, int tamanho1, int[] vetor2, int tamanho2)`**:
+**Lógica do `merge(int[] vetor1, int tamanho1, int[] vetor2, int tamanho2)`**:
 - Cria um novo vetor com espaço suficiente para armazenar todos os elementos dos dois vetores de entrada.
 - Utiliza três índices:
   - `i` percorre o `vetor1`
@@ -141,7 +141,7 @@ Este repositório contém a implementação das estruturas de dados **Pilha** e 
 - Quando um dos vetores for totalmente percorrido, os elementos restantes do outro vetor são copiados diretamente.
 - Retorna o vetor resultante ordenado.
 
-**Funcionamento do `imprimirVetor(int[] vetor, int tamanho)`**:
+**Lógica do `imprimirVetor(int[] vetor, int tamanho)`**:
 - Imprime os elementos do vetor manualmente, entre colchetes e separados por vírgulas.
 
 ---
