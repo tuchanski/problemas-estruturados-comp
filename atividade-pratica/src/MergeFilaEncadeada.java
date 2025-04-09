@@ -1,4 +1,4 @@
-public class Merge {
+public class MergeFilaEncadeada {
 
     public static FilaEncadeada merge(FilaEncadeada fila1, FilaEncadeada fila2) {
         FilaEncadeada filaMergeada = new FilaEncadeada();
